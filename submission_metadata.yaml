@@ -1,0 +1,45 @@
+team_name: FILL_YOUR_TEAM_NAME_HERE
+primary_contact:
+  name: FILL_YOUR_FRIENDS_NAME
+  email: FILL_YOUR_FRIENDS_EMAIL@example.com
+  phone: FILL_YOUR_PHONE_NUMBER
+team_members:
+- name: FILL_YOUR_FRIENDS_NAME
+  email: FILL_YOUR_FRIENDS_EMAIL@example.com
+  role: ML Engineer
+- name: FILL_YOUR_NAME
+  email: FILL_YOUR_EMAIL@example.com
+  role: Data Scientist
+github_repo: "https://github.com/saitejo/ai-candidate-ranking-engine"
+sandbox_link: FILL_YOUR_STREAMLIT_CLOUD_LINK
+reproduce_command: jupyter nbconvert --to notebook --execute 03_final_pipeline.ipynb
+compute:
+  platform: MacBook Pro
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: 3.10.12
+  os: macOS 14
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+ai_tools_used:
+- None
+ai_usage_summary: No AI tools were used for generating the core ranking logic or candidate
+  evaluation. All statistical methods (Shapiro-Wilk, IQR, Shannon Entropy) were implemented
+  manually via standard Python libraries (SciPy/Pandas).
+methodology_summary: "Statistically rigorous ranking engine designed to prevent distribution\
+  \ shift on unseen data. \n1. Automated Shapiro-Wilk testing picks the optimal memoryless\
+  \ mathematical transform (Log, Sqrt, CubeRoot) per feature.\n2. Highly skewed red-flag\
+  \ features (days inactive, suspicious endorsements) use IQR outlier elimination\
+  \ (value > Q3 + 1.5*IQR) to effectively drop honeypots and ghosts.\n3. Surviving\
+  \ candidates' features are converted to Percentile Ranks [0, 1].\n4. Weights are\
+  \ dynamically calculated via Shannon Entropy, automatically giving higher weight\
+  \ to features with higher variance/discriminative power.\nExecutes in ~10 seconds\
+  \ on 100K candidates using vectorized pandas operations.\n"
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
