@@ -16,7 +16,6 @@ Our main focus was building a system that is robust against **distribution shift
 
 ## Files
 - `01_data_exploration.ipynb`: Initial data parsing.
-- `02_scoring_formula.ipynb`: Baseline logic and heuristic drafting.
 - `02b_scaling_exploration.ipynb`: Research on distributions and scalers.
 - `03_final_pipeline.ipynb`: The main execution script. Run this to generate the CSV.
 - `app.py`: A Streamlit UI to visualize the final results.
