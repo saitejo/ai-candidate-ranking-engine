@@ -1,17 +1,12 @@
-team_name: FILL_YOUR_TEAM_NAME_HERE
+team_name: VectorLogic
 primary_contact:
-  name: FILL_YOUR_FRIENDS_NAME
-  email: FILL_YOUR_FRIENDS_EMAIL@example.com
-  phone: FILL_YOUR_PHONE_NUMBER
+  name: Sai Rama Krishna
+  email: tejosai07@gmail.com
 team_members:
-- name: FILL_YOUR_FRIENDS_NAME
-  email: FILL_YOUR_FRIENDS_EMAIL@example.com
-  role: ML Engineer
-- name: FILL_YOUR_NAME
-  email: FILL_YOUR_EMAIL@example.com
-  role: Data Scientist
+- name: Sai Sujan Reddy
+  email: saisujanreddy2908@gmail.com
 github_repo: "https://github.com/saitejo/ai-candidate-ranking-engine"
-sandbox_link: FILL_YOUR_STREAMLIT_CLOUD_LINK
+sandbox_link: https://ai-candidate-ranking-engine-9tk5nh4ladfku4rhlarjph.streamlit.app/
 reproduce_command: jupyter nbconvert --to notebook --execute 03_final_pipeline.ipynb
 compute:
   platform: MacBook Pro
