@@ -19,7 +19,7 @@ compute:
   pre_computation_required: false
   pre_computation_time_minutes: 0
 ai_tools_used:
-- None
+- Antigravity was used to help with the code, ideation was predominantly done by the team members only. Everything in the code works without the help of AI, pure mathematical formulae have been implemented to achieve the results.
 ai_usage_summary: No AI tools were used for generating the core ranking logic or candidate
   evaluation. All statistical methods (Shapiro-Wilk, IQR, Shannon Entropy) were implemented
   manually via standard Python libraries (SciPy/Pandas).
